@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"><title>Internet Satellitaire 2.0 - TechVision</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <header role="banner" class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Navigation principale">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">TechVision</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-blue-600 font-semibold border-b-2 border-blue-600">Accueil</a></li>
+                <li><a href="login.html" class="hover:text-blue-600">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container mx-auto px-6 py-10 max-w-4xl">
+        <h1 class="text-4xl font-extrabold mb-6">Internet Satellitaire 2.0</h1>
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa" alt="Vue satellite de la terre avec des connexions lumineuses" class="w-full h-80 object-cover rounded-xl mb-8">
+        
+        <table class="min-w-full bg-white mb-8 border" aria-label="Débit internet par région">
+            <thead class="bg-indigo-700 text-white text-left">
+                <tr><th scope="col" class="p-3">Région</th><th scope="col" class="p-3">Débit (Gbps)</th><th scope="col" class="p-3">Latence</th></tr>
+            </thead>
+            <tbody>
+                <tr><td class="p-3 border">Zones Rurales</td><td class="p-3 border">1.2</td><td class="p-3 border">15ms</td></tr>
+                <tr><td class="p-3 border">Océans</td><td class="p-3 border">0.8</td><td class="p-3 border">25ms</td></tr>
+                <tr><td class="p-3 border">Déserts</td><td class="p-3 border">1.0</td><td class="p-3 border">20ms</td></tr>
+            </tbody>
+            <tfoot class="text-xs text-center p-2"><td colspan="3">Données collectées via Starlink-V6</td></tfoot>
+        </table>
+
+        <section class="border-t pt-6" aria-labelledby="comment-label">
+            <h2 id="comment-label" class="font-bold text-lg mb-4">Avis des utilisateurs</h2>
+            <div class="bg-white p-4 shadow-sm mb-4" aria-label="Commentaire de Mike">
+                <p class="font-bold">Mike - <time>15/01/2026</time></p>
+                <p>Enfin du haut débit sur mon voilier !</p>
+            </div>
+            <div class="bg-white p-4 shadow-sm" aria-label="Commentaire de Sonia">
+                <p class="font-bold">Sonia - <time>16/01/2026</time></p>
+                <p>L'installation reste encore un peu chère pour le grand public.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
