@@ -1,64 +1,102 @@
 <!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="../styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVision 2026 - Portail Innovation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-50 text-gray-900 font-sans">
 
-<body>
-    <div class="home-container">
-        <h1>Welcome to the Home Page</h1>
-        <p>This is the main content of the home page.</p>
-        <a href="login.html">Go to Login Page</a>
-    </div>
+    <header role="banner" class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Navigation principale">
+            <a href="index.html" class="text-2xl font-bold text-blue-600" aria-current="page">TechVision</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-blue-600 font-semibold border-b-2 border-blue-600">Accueil</a></li>
+                <li><a href="login.html" class="hover:text-blue-600">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="article1">
-        <h2>Article 1 Title</h2>
-        <p>This is the content of Article 1. It provides information about the first topic.</p>
-        <a href="./page1.html">Read more</a>
-        <div class="img1">
-            <img src="./static/media/img1.jpg" alt="nain de jardin dormant dans la pelouse">
+    <main id="main-content" class="container mx-auto px-6 py-10">
+        <h1 class="text-4xl font-extrabold mb-12 text-center" id="main-title">À la une de la Tech - Janvier 2026</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <article class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col transition-transform hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995" alt="Réseaux de neurones artificiels" class="h-48 w-full object-cover">
+                <div class="p-6 flex-grow">
+                    <h2 class="text-xl font-bold mb-2">L'IA Générative : La fin des interfaces ?</h2>
+                    <p class="text-gray-600 text-sm mb-4">La commande vocale remplace-t-elle définitivement le clic ?</p>
+                    <div class="flex justify-between items-center">
+                        <a href="page1.html" class="text-blue-600 font-bold hover:underline" aria-label="Lire l'article sur l'IA">Lire la suite</a>
+                        <span class="text-xs bg-gray-100 px-2 py-1 rounded" aria-label="8 commentaires">💬 8</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col transition-transform hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b" alt="Serveurs de données sécurisés" class="h-48 w-full object-cover">
+                <div class="p-6 flex-grow">
+                    <h2 class="text-xl font-bold mb-2">Cybersécurité : Menaces 2026</h2>
+                    <p class="text-gray-600 text-sm mb-4">Analyse des attaques par informatique quantique.</p>
+                    <div class="flex justify-between items-center">
+                        <a href="page2.html" class="text-blue-600 font-bold hover:underline" aria-label="Lire l'article sur la cybersécurité">Lire la suite</a>
+                        <span class="text-xs bg-gray-100 px-2 py-1 rounded" aria-label="12 commentaires">💬 12</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col transition-transform hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Composants de puces électroniques" class="h-48 w-full object-cover">
+                <div class="p-6 flex-grow">
+                    <h2 class="text-xl font-bold mb-2">Puces Bio-organiques</h2>
+                    <p class="text-gray-600 text-sm mb-4">La fusion entre biologie et informatique franchit un cap.</p>
+                    <div class="flex justify-between items-center">
+                        <a href="page3.html" class="text-blue-600 font-bold hover:underline" aria-label="Lire l'article sur les puces bio">Lire la suite</a>
+                        <span class="text-xs bg-gray-100 px-2 py-1 rounded">💬 5</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col transition-transform hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa" alt="Planète Terre vue de l'espace avec data" class="h-48 w-full object-cover">
+                <div class="p-6 flex-grow">
+                    <h2 class="text-xl font-bold mb-2">Internet Satellitaire 2.0</h2>
+                    <p class="text-gray-600 text-sm mb-4">Le haut débit partout sur Terre, même au fond des océans.</p>
+                    <div class="flex justify-between items-center">
+                        <a href="page4.html" class="text-blue-600 font-bold hover:underline" aria-label="Lire l'article sur le satellite">Lire la suite</a>
+                        <span class="text-xs bg-gray-100 px-2 py-1 rounded">💬 15</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col transition-transform hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" alt="Bras robotique de précision" class="h-48 w-full object-cover">
+                <div class="p-6 flex-grow">
+                    <h2 class="text-xl font-bold mb-2">Robotique Domestique</h2>
+                    <p class="text-gray-600 text-sm mb-4">Les humanoïdes arrivent enfin dans nos cuisines.</p>
+                    <div class="flex justify-between items-center">
+                        <a href="page5.html" class="text-blue-600 font-bold hover:underline" aria-label="Lire l'article sur la robotique">Lire la suite</a>
+                        <span class="text-xs bg-gray-100 px-2 py-1 rounded">💬 22</span>
+                    </div>
+                </div>
+            </article>
+
         </div>
-    </div>
+    </main>
 
-    <div class="article2">
-        <h2>Article 2 Title</h2>
-        <p>This is the content of Article 2. It provides information about the second topic.</p>
-        <a href="./page2.html">Read more</a>
-        <div class="img2">
-            <img src="./static/media/img2.jpg" alt="personne atteinte de nanisme devant un ordinateur : un nain formaticien">
+    <footer role="contentinfo" class="bg-gray-800 text-white py-12 mt-16">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <p class="text-lg font-bold">TechVision 2026</p>
+                <p class="text-gray-400 text-sm">Projet pédagogique - Sémantique & Accessibilité</p>
+            </div>
+            <div class="text-right">
+                <p class="text-sm">Règle Opquast #3 : <a href="mailto:contact@techvision.com" class="underline hover:text-blue-400">Nous contacter</a></p>
+            </div>
         </div>
-    </div>
-
-    <div class="article3">
-        <h2>Article 3 Title</h2>
-        <p>This is the content of Article 3. It provides information about the third topic.</p>
-        <a href="./page3.html">Read more</a>
-        <div class="img3">
-            <img src="./static/media/img3.jpg" alt="personne atteinte de nanisme sans barbe : un nain berbe">
-        </div>
-    </div>
-
-    <div class="article4">
-        <h2>Article 4 Title</h2>
-        <p>This is the content of Article 4. It provides information about the fourth topic.</p>
-        <a href="./page4.html">Read more</a>
-        <div class="img4">
-            <img src="./static/media/img4.jpg" alt="personne atteinte de nanisme devant des livres : un nain tellectuel">
-        </div>
-    </div>
-
-    <div class="article5">
-        <h2>Article 5 Title</h2>
-        <p>This is the content of Article 5. It provides information about the fifth topic.</p>
-        <a href="./page5.html">Read more</a>
-        <div class="img5">
-            <img src="./static/media/img5.jpg" alt="personne atteinte de nanisme en train d'arrêter quelqu'un : un nain specteur">
-        </div>
-    </div>
+    </footer>
 
 </body>
-
-<footer>
-    <p>&copy; 2024 My Website. All rights reserved.</p>
-</footer>
+</html>
