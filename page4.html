@@ -18,7 +18,7 @@
         <h1 class="text-4xl font-extrabold mb-6">Internet Satellitaire 2.0</h1>
         <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa" alt="Vue satellite de la terre avec des connexions lumineuses" class="w-full h-80 object-cover rounded-xl mb-8">
         
-        <table class="min-w-full bg-white mb-8 border" aria-label="Débit internet par région">
+        <table class="min-w-full bg-white mb-8 border">
             <thead class="bg-indigo-700 text-white text-left">
                 <tr><th scope="col" class="p-3">Région</th><th scope="col" class="p-3">Débit (Gbps)</th><th scope="col" class="p-3">Latence</th></tr>
             </thead>
@@ -30,17 +30,27 @@
             <tfoot class="text-xs text-center p-2"><td colspan="3">Données collectées via Starlink-V6</td></tfoot>
         </table>
 
-        <section id="commentaires" class="border-t pt-6" aria-labelledby="comment-label">
-            <h2 id="comment-label" class="font-bold text-lg mb-4">Avis des utilisateurs</h2>
-            <div class="bg-white p-4 shadow-sm mb-4" aria-label="Commentaire de Mike">
-                <p class="font-bold">Mike - <time>15/01/2026</time></p>
-                <p>Enfin du haut débit sur mon voilier !</p>
-            </div>
-            <div class="bg-white p-4 shadow-sm" aria-label="Commentaire de Sonia">
-                <p class="font-bold">Sonia - <time>16/01/2026</time></p>
-                <p>L'installation reste encore un peu chère pour le grand public.</p>
-            </div>
-        </section>
+         <section id="commentaires" class="border-t pt-10">
+                <h2 class="text-2xl font-bold mb-6">Commentaires (2)</h2>
+                
+                <div class="space-y-6">
+                    <article class="bg-gray-100 p-6 rounded-lg">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold">Jean Dupont</span>
+                            <time datetime="2026-01-25" class="text-sm text-gray-500">25 janvier 2026</time>
+                        </div>
+                        <p class="text-gray-700">Très bon article, merci pour ces informations ! Le tableau comparatif est vraiment utile.</p>
+                    </article>
+
+                    <article class="bg-gray-100 p-6 rounded-lg">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold">Sarah L.</span>
+                            <time datetime="2026-01-26" class="text-sm text-gray-500">26 janvier 2026</time>
+                        </div>
+                        <p class="text-gray-700">Je pense que Llama 4 va rattraper son retard rapidement grâce à l'open source.</p>
+                    </article>
+                </div>
+            </section>
     </main>
 </body>
 </html>
