@@ -7,7 +7,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-900 font-sans min-h-screen flex flex-col">
-
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-blue-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:outline-none">
+    Aller au contenu principal</a>
+    <a href="#footer" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-blue-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:outline-none">
+    Aller au pied de page</a>
     <header role="banner" class="bg-white shadow-md" aria-label="Haut de page">
         <img src="logo.png" alt="logo TechVision" class="h-10 w-auto" aria-hidden="true">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Navigation principale">
@@ -69,7 +72,7 @@
         </section>
     </main>
 
-    <footer role="contentinfo" class="bg-gray-800 text-white py-6" aria-label="Pied de page">
+    <footer id="footer" role="contentinfo" class="bg-gray-800 text-white py-6" aria-label="Pied de page">
         <div class="container mx-auto px-6 text-center text-xs">
             <p>&copy; 2026 TechVision</p>
             <a href="navigation.html" class="text-white hover:text-blue-300" aria-label="Plan du site">Plan du site</a>
