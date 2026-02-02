@@ -5,16 +5,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-900">
-    <header role="banner" class="bg-white shadow-md">
+    <header role="banner" class="bg-white shadow-md" aria-label="Haut de page">
+        <img src="logo.png" alt="logo TechVision" class="h-10 w-auto" aria-hidden="true">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Navigation principale">
-            <img src="logo.png" alt="logo TechVision" class="h-10 w-auto">
             <ul class="flex space-x-6">
                 <li><a href="index.html" class="hover:text-blue-600 font-semibold border-b-2 border-blue-600">Accueil</a></li>
                 <li><a href="login.html" class="hover:text-blue-600">Connexion</a></li>
             </ul>
         </nav>
     </header>
-    <main class="container mx-auto px-6 py-10 max-w-4xl">
+    <main class="container mx-auto px-6 py-10 max-w-4xl" aria-label="Corps de page">
         <h1 class="text-4xl font-extrabold mb-4">Robots : Nos nouveaux colocataires</h1>
         <time datetime="2026-01-25" class="text-gray-500 italic">25 janvier 2026 par Aymeric Ferte</time>
         <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" alt="Bras robotique aidant une personne âgée" class="w-full h-80 object-cover rounded-xl mb-8">
@@ -54,7 +54,7 @@
             </section>
     </main>
 
-    <footer role="contentinfo" class="bg-gray-800 text-white py-8 mt-12">
+    <footer role="contentinfo" class="bg-gray-800 text-white py-8 mt-12" aria-label="Pied de page">
         <div class="container mx-auto px-6 text-center text-sm">
             <p>&copy; 2026 TechVision</p>
             <a href="navigation.html" class="text-white hover:text-blue-300" aria-label="Plan du site">Plan du site</a>

@@ -8,9 +8,9 @@
 </head>
 <body class="bg-gray-100 text-gray-900 font-sans min-h-screen flex flex-col">
 
-    <header role="banner" class="bg-white shadow-md">
+    <header role="banner" class="bg-white shadow-md" aria-label="Haut de page">
+        <img src="logo.png" alt="logo TechVision" class="h-10 w-auto" aria-hidden="true">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Navigation principale">
-            <img src="logo.png" alt="logo TechVision" class="h-10 w-auto">
             <ul class="flex space-x-6">
                 <li><a href="index.html" class="hover:text-blue-600">Accueil</a></li>
                 <li><a href="login.html" class="font-bold text-blue-600" aria-current="page">Connexion</a></li>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <main id="main-content" class="flex-grow flex items-center justify-center px-6 py-12">
+    <main id="main-content" class="flex-grow flex items-center justify-center px-6 py-12" aria-label="Corps de page">
         <section class="bg-white p-8 rounded-xl shadow-lg max-w-md w-full">
             <h1 class="text-3xl font-bold mb-6 text-center">Accès membre</h1>
             
@@ -48,7 +48,7 @@
                     <button
                         type="button" 
                         onclick="togglePwd()"
-                        class="absolute inset-y-0 right-0 px-3 flex items-center text-gray-500 hover:text-blue-600">
+                        class="inset-y-0 right-0 px-3 flex items-center text-gray-500 hover:text-blue-600">
                         <span id="eye-icon" aria-label="Afficher/Masquer le mot de passe">👁️</span>
                     </button>
                 </div>
@@ -67,7 +67,7 @@
         </section>
     </main>
 
-    <footer role="contentinfo" class="bg-gray-800 text-white py-6">
+    <footer role="contentinfo" class="bg-gray-800 text-white py-6" aria-label="Pied de page">
         <div class="container mx-auto px-6 text-center text-xs">
             <p>&copy; 2026 TechVision</p>
             <a href="navigation.html" class="text-white hover:text-blue-300" aria-label="Plan du site">Plan du site</a>
