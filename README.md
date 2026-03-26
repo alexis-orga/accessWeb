@@ -2,8 +2,6 @@
 
 Mini-site de presse (type [Next.ink](https://next.ink)) réalisé dans le cadre d'un projet pédagogique axé sur l'accessibilité web et la qualité numérique.
 
-> Projet réalisé en binôme — Durée : 16h — Intervenant : Camille Bouvat
-
 ---
 
 ## 📋 Description
@@ -54,24 +52,7 @@ Ce projet consiste en la création d'un mini-site de presse statique comprenant 
 
 ### Lecteur d'écran
 - Site testé et utilisable avec **VoiceOver** (macOS) et **Narrateur** (Windows)
-- Validation via l'outil [WAVE](https://wave.webaim.org/) (zéro erreur)
 - Tous les éléments principaux sont labellisés
-
----
-
-## ✅ Qualité web (Opquast)
-
-Les règles Opquast suivantes ont été intégrées au projet :
-
-| Règle | Description |
-|-------|-------------|
-| #6 | Le site propose un mécanisme de navigation de contournement |
-| #76 | Les images ont un attribut `alt` pertinent |
-| #164 | Les formulaires ont des labels explicites |
-| #171 | Les liens sont explicites hors contexte |
-| #191 | La langue principale de chaque page est définie |
-| #219 | Les tableaux de données ont des en-têtes |
-| #231 | Les erreurs de saisie sont identifiées et décrites |
 
 ---
 
@@ -83,8 +64,6 @@ cd accessWeb
 ```
 
 Ouvrez `index.html` dans votre navigateur, ou utilisez l'extension **Live Server** sur VS Code.
-
-Le site est également hébergé sur **GitHub Pages** : [alexis-orga.github.io/accessWeb](https://alexis-orga.github.io/accessWeb)
 
 ---
 
